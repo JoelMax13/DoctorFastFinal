@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.007e4537.css",
+    "main.js": "/static/js/main.5ddd79b1.js",
+    "static/media/LogoDoctorFast1.png": "/static/media/LogoDoctorFast1.71b4277b73c58adb6e22.png",
+    "static/media/FondoPrincipal5.jpg": "/static/media/FondoPrincipal5.621e479735888e079039.jpg",
+    "index.html": "/index.html",
+    "main.007e4537.css.map": "/static/css/main.007e4537.css.map",
+    "main.5ddd79b1.js.map": "/static/js/main.5ddd79b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.007e4537.css",
+    "static/js/main.5ddd79b1.js"
+  ]
+}
