@@ -1,0 +1,114 @@
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0 0 0 0;
+    padding: 0;
+    /* background-size: auto 100%; */
+    /* background-color: #171717; */
+    /* overflow: scroll; */
+}
+.h1{
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+}
+.fondo{ /*Definimos al div con sus características*/
+    /* background-color: #171717; */
+    display: flex;
+    height: calc(100vh 100vh);
+    position: relative;
+    color: white;
+    background-color: #171717;
+}
+.fondo::before{ /*Usamos ::before para poder opacar solo el fondo de la imagen en un div*/
+    content: '';
+    position: absolute;
+    /* background-image: url("../Imagenes/FondoPrincipal2.jpg");
+    background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 0;
+    opacity: .2;
+    background: url("../Imagenes/FondoPrincipal5.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.cuadro{ /*Opacidad en un background Color [rgba(... .3)]*/
+    /* background: rgba(245,245,245, .3); */
+    width: 70%;
+    height:max-content;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 10px;
+    
+    /*box-shadow: 0 1px 1px wheat, 
+              0 2px 2px wheat, 
+              0 4px 4px wheat, 
+              0 6px 6px wheat, 
+              0 6px 6px wheat, 
+              0 10px 10px wheat; */
+    
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 1px 1px #DBD8E3, 
+              0 2px 2px #DBD8E3, 
+              0 4px 4px #DBD8E3, 
+              0 6px 6px #DBD8E3, 
+              0 6px 6px #DBD8E3, 
+              0 10px 10px #DBD8E3; 
+}
+
+@media screen and (max-width: 1005px) {
+    .lblArriba{
+        width: 100%;
+    }
+    .txtAbajo{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .cuadro{
+        margin-top: 15%;
+        margin-bottom: 18%;
+    }
+}
+@media screen and (max-width: 375px) and (min-width: 350px) {
+    .cuadro{
+        margin-top: 50%;
+        margin-bottom: 64%;
+    }
+}
+@media screen and (max-width: 500px) and (min-width: 376px) {
+    .cuadro{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+@media screen and (max-width: 700px) and (min-width: 376px) {
+    .cuadro{
+        margin-top: 30%;
+        margin-bottom: 70%;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 700px) {
+    .cuadro{
+        margin-top: 33%;
+        margin-bottom: 40%;
+    }
+}
+@media screen and (max-width: 1280px) and (min-width: 800px) {
+    .cuadro{
+        margin-top: 15%;
+        margin-bottom: 20%;
+    }
+}

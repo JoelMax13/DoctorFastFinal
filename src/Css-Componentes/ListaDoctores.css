@@ -1,0 +1,48 @@
+.Contenedor-Doctor{
+    width: 90%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    /* display:inline-block; */
+    /* align-items: center; */
+    /* justify-content:space-between; */
+    background-color: white;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 /15%);
+    border-radius: 10px;
+}
+.info{
+    margin-left: 5%;
+    margin-right: 5%;    
+    padding-bottom: 2%;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+}
+.Nombre-Texto-Doctor{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.Contenedor-texto-Doctor{
+    font-family: Lato, sans-serif;
+}
+.Nombre-Doctor{
+    font-size: 1.3rem;
+}
+.Especialidad-Doctor{
+    font-size: 1.3rem;
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+.BtnAgendar{
+    margin-top:auto;
+    margin-bottom: 5%;
+}
+.izq{
+    font-size: 130px;
+}
+#Horarios{
+    display: none;
+}

@@ -1,0 +1,185 @@
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0 0 0 0;
+    padding: 0;
+    background-size: auto 100%;
+    height: 100%;
+    /* background-color: rgb(109, 195, 205); */
+}
+.fondoSistema{
+    overflow: scroll;
+    display: flex;
+    /* height: calc(100vh 100vh); */
+    position:fixed;
+    color: white;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-size: cover;
+    background-color: rgb(109, 195, 205);
+}
+.headerPaciente{
+    width: 100%;
+    color: white;
+    font-size: 7em;
+    background-color: rgba(8, 155, 171, 1);
+    text-align: center;
+    /* background-size: cover; */
+    text-shadow: 0.1em 0.1em 0.2em black;
+    border-radius: 10px 10px 0 0;
+    font-family:'Courier New', Courier, monospace;
+    /*position: fixed;*/
+}
+ul{
+    list-style-type: none;
+    margin: -1px;
+    margin-top: 1px;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+}
+li{
+    flex-grow: 0.5;
+}
+.aNavegacion{
+  display: block;
+  padding: 0.2em;
+  background-color: rgba(8, 155, 171, 1);
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+.aNavegacion:hover{
+    background-color: white;
+    color: rgba(8, 155, 171, 1);
+}
+.logo{
+    width: 1.5em;
+}
+.contenido{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+.menuClickeado{
+    background-color: white;
+    color: rgba(8, 155, 171, 1);
+}
+.busqueda{
+    margin-left: auto;
+    margin-right: auto;
+}
+.salida{
+    width: 100%;
+    text-align: right;
+}
+.salir{
+    margin-right: 5%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.cuadro{ /*Opacidad en un background Color [rgba(... .3)]*/
+    /* background: rgba(245,245,245, .3); */
+    width: 80%;
+    height:max-content;
+    padding-top: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    color: black;
+    
+    /*box-shadow: 0 1px 1px wheat, 
+              0 2px 2px wheat, 
+              0 4px 4px wheat, 
+              0 6px 6px wheat, 
+              0 6px 6px wheat, 
+              0 10px 10px wheat; */
+    
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 1px 1px #2d3030, 
+              0 2px 2px #2d3030, 
+              0 4px 4px #2d3030, 
+              0 6px 6px #2d3030, 
+              0 6px 6px #2d3030, 
+              0 10px 10px #2d3030; 
+}
+@media screen and (max-width: 350px) {
+    .cuadro{
+        margin-top: 15%;
+        margin-bottom: 18%;
+    }
+}
+@media screen and (max-width: 375px) and (min-width: 350px) {
+    .cuadro{
+        margin-top: 50%;
+        margin-bottom: 64%;
+    }
+}
+@media screen and (max-width: 500px) and (min-width: 376px) {
+    .cuadro{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+@media screen and (max-width: 700px) and (min-width: 376px) {
+    .cuadro{
+        margin-top: 30%;
+        margin-bottom: 70%;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 700px) {
+    .cuadro{
+        margin-top: 33%;
+        margin-bottom: 40%;
+    }
+}
+@media screen and (max-width: 1280px) and (min-width: 800px) {
+    .cuadro{
+        margin-top: 15%;
+        margin-bottom: 20%;
+    }
+}
+@media (max-width: 700px) {
+    .menuIcono{
+      display: block;
+    }
+    .navigation ul{
+      display: none;
+    }
+    .navigation ul.show{
+      display: block;
+    }
+    .ulNavegacion{
+      margin-top: 5%;
+      list-style-type: none;
+      margin: 1px;
+      padding: 1px;
+      display: flex;
+      flex-direction: column;
+    }
+    .liNavegacion{
+      flex-grow: 0.5;
+    }
+    .aNavegacion{
+      display: block;
+      padding: 0.2em;
+      color: white;
+      text-align: center;
+      margin-bottom: 0.2em;
+      font-size: 1.3em;
+    }
+}
+@media (max-width: 599px) {
+    .nombreApp{
+        display: none;
+    }
+}
